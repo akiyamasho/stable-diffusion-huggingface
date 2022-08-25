@@ -2,7 +2,7 @@ import sys
 import logging
 import torch
 
-from diffusers import StableDiffusionPipeline, DDIMScheduler
+from diffusers import StableDiffusionPipeline
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -11,21 +11,15 @@ logger = logging.getLogger(__name__)
 
 
 def generate_single(prompt: str):
-    # This will substitute the default PNDM scheduler for DDIM
-    # see the experiment here for a visualization with different schedulers
-    # https://www.reddit.com/r/StableDiffusion/comments/wwm2at/sampler_vs_steps_comparison_low_to_mid_step_counts
-    scheduler = DDIMScheduler(
-        beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear"
-    )
-
     pipe = StableDiffusionPipeline.from_pretrained(
         "CompVis/stable-diffusion-v1-4",
-        scheduler=scheduler,
-        num_inference_steps=16,
         use_auth_token=True,
     ).to(DEVICE)
 
-    with torch.autocast(DEVICE):
+    if torch.cuda.is_available():
+        with torch.autocast(DEVICE):
+            image = pipe(prompt)["sample"][0]
+    else:
         image = pipe(prompt)["sample"][0]
 
     export_filename = f"{prompt}.png"
