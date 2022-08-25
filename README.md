@@ -46,7 +46,7 @@ You can use these prompt suffixes to generate decent-looking outputs.
 
 Add your description of a place at the start of the prompt.
 
-1. "`[description of place]`, tone mapped, shiny, intricate, cinematic lighting, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by terry moore and greg rutkowski and alphonse mucha" (thanks to @jquesnelle)
+1. "`[description of place]`, tone mapped, shiny, intricate, cinematic lighting, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by terry moore and greg rutkowski and alphonse mucha" (credit: [@jquesnelle](https://github.com/jquesnelle))
 
 ![old harbour, tone mapped, shiny, intricate, cinematic lighting, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by terry moore and greg rutkowski and alphonse mucha](https://user-images.githubusercontent.com/35907066/186828185-dd0d3a00-b787-4bf3-8222-eeb94baa53c4.png)
 
@@ -55,4 +55,5 @@ Add your description of a place at the start of the prompt.
 Add your description of a human at the start of the prompt.
 
 1. "`[description of human]` Clean Cel shaded vector art. Shutterstock. behance hd by lois van baarle, artgerm, Helen huang, by makoto shinkai and ilya kuvshinov, rossdraws, illustration" (credit: [The_Bravinator on Reddit](https://www.reddit.com/user/The_Bravinator/))
+
 ![anime girl wearing a kimono, Clean Cel shaded vector art  Shutterstock  behance hd by lois van baarle, artgerm, Helen huang, by makoto shinkai and ilya kuvshinov, rossdraws, illustration](https://user-images.githubusercontent.com/35907066/186828179-d267f0d5-0078-4d01-9c99-dec351bb2fa5.png)
