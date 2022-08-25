@@ -1,0 +1,5 @@
+torch==1.12.1
+torchvision
+diffusers==0.2.4
+scipy==1.9.0
+transformers==4.21.2
